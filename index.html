@@ -3,94 +3,173 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-  <title>LPの練習</title>
+  <title>Document</title>
+  <!-- box icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <!-- Header -->
-  <div class="color">
-    <header id="header">
-      <h1 class="site-tittle">
-        <a href="#">KohoCode</a>
-      </h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#works">works</a></li>
-          <li><a href="#news">News</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="https://www.Twitter.com" target="_blank" rel="noopener noreferrer"><img src="img/twitter.png" alt="Twitter" class="icon"></a></li>
-        </ul>
-      </nav>
-    </header>
-  </div>
 
+  <!-- header design -->
+  <header class="header">
+    <a href="#" class="logo">Portfolio</a>
 
-  <!-- main -->
-  <div id="main">
-    <picture>
-      <source media="(max-width: 600px)" srcset="img/main-sp.jpg">
-      <img src="img/main-pc.jpg" alt="">
-    </picture>
-  </div>
+    <i class='bx bx-menu' id="menu-icon"></i>
 
-  <!-- about -->
-  <section id="about" class="wrapper">
-    <h2 class="sec-tittle">About</h2>
-    <ul>
-      <li>KohoCodo株式会社</li>
-      <li>Web制作会社として設立</li>
-      <li>Webサイト・アプリ開発を承ります</li>
-      <li>メールアドレス:ninchan474@gmail.com</li>
-    </ul>
-    <p>Webサイト制作やアプリ開発を得意としています。また、Web講師としても活動しており新人の育成のしたい企業も申込承ります。</p>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- home section design -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Hello, It`s Me</h3>
+      <h1>koho nin</h1>
+      <h3>And I`m a <span class="multiple-text"></span></h3>
+      <p>"Why don't scientists trust atoms? Because they make up everything!" "Why did the bicycle fall over? Because it was two-tired!" "Why did the math book look sad? Because it had too many problems." "Parallel lines have so much in common. It's a shame they'll never meet." "I told my computer I needed a break, and now it won't stop sending me vacation ads."</p>
+      <div class="social-media">
+        <a href="#"><i class='bx bxl-facebook' ></i></a>
+        <a href="#"><i class='bx bxl-twitter' ></i></a>
+        <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+      </div>
+      <a href="#" class="btn">Download CV</a>
+    </div>
+
+    <div class="home-img">
+      <img src="S__36167688.jpg" alt="">
+    </div>
   </section>
 
-  <!-- works -->
-  <section id="works" class="wrapper">
-    <h2 class="sec-tittle">Works</h2>
-    <ul>
-      <li><img src="img/works1.jpg" alt=""></li>
-      <li><img src="img/works2.jpg" alt=""></li>
-      <li><img src="img/works3.jpg" alt=""></li>
-      <li><img src="img/works4.jpg" alt=""></li>
-      <li><img src="img/works5.jpg" alt=""></li>
-      <li><img src="img/works6.jpg" alt=""></li>
-    </ul>
+  <!-- about secrion design -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="S__36184125.jpg" alt="">
+    </div>
+
+    <div class="about-content">
+      <h2 class="heading">About <span>Me</span></h2>
+      <h3>Frontend Developer</h3>
+      <p>"Why don't scientists trust atoms? Because they make up everything!" "Why did the bicycle fall over? Because it was two-tired!" "Why did the math book look sad? Because it had too many problems." "Parallel lines have so much in common. It's a shame they'll never meet." "I told my computer I needed a break, and now it won't stop sending me vacation ads."</p>
+      <a href="#" class="btn">Read More</a>
+    </div>
   </section>
 
-  <section id="news" class="wrapper">
-    <h2 class="sec-tittle">News</h2>
-    <dl>
-      <dt>2024/01/25</dt>
-      <dd>本サイトをリリースしました</dd>
-      <dt>2024/01/01</dt>
-      <dd>Web制作始めました</dd>
-      <dt>2024/08/16</dt>
-      <dd>プログラミング始めました</dd>
-      <dt>2024/01/18</dt>
-      <dd>初めてポートフォリオを作りました</dd>
-      <dt>2000/11/22</dt>
-      <dd>僕が生まれました</dd>
-    </dl>
+  <!-- service section design -->
+  <section class="services" id="services">
+    <h2 class="heading">Our <span>Service</span></h2>
+
+    <div class="services-container">
+      <div class="services-box">
+        <i class='bx bx-code-alt' ></i>
+        <h3>Web Development</h3>
+        <p>We use cookies and similar technologies on our website and process your personal data</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+
+      <div class="services-box">
+        <i class='bx bxs-paint' ></i>
+        <h3>Graphic Design</h3>
+        <p>We use cookies and similar technologies on our website and process your personal data</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+
+      <div class="services-box">
+        <i class='bx bx-paint-roll' ></i>
+        <h3>Digital Marketiong</h3>
+        <p>We use cookies and similar technologies on our website and process your personal data</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </div>
   </section>
-  <section id="contact" class="wrapper">
-    <h2 class="sec-tittle">Contact</h2>
-    <p>お問い合わせは以下のフォームから</p>
-    <form action="#" method="post">
-      <dl>
-        <dt><label for="name">お名前</label></dt>
-        <dd><input type="text" id="name"></dd>
-        <dt><label for="email">メールアドレス</label></dt>
-        <dd><input type="email" id="email"></dd>
-        <dt><label for="content">内容</label></dt>
-        <dd><textarea id="content" cols="30" rows="10"></textarea></dd>
-        
-      </dl>
-      <div class="button"><input type="submit" value="送信"></div>
+
+  <section class="Portfolio" id="portfolio">
+    <h2 class="heading">Latest <span>Project</span></h2>
+
+    <div class="portfolio-container">
+      <div class="portfolio-box">
+        <img src="S__36028437.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>Web Design</h4>
+          <p>We use cookies and similar technologies on our website and process your personal data</p>
+          <a href="#"><i class='bx bx-link-external' ></i></a>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="S__36028437.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>Web Design</h4>
+          <p>We use cookies and similar technologies on our website and process your personal data</p>
+          <a href="#"><i class='bx bx-link-external' ></i></a>
+        </div>
+      </div>
+  
+      <div class="portfolio-box">
+        <img src="S__36028437.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>Web Design</h4>
+          <p>We use cookies and similar technologies on our website and process your personal data</p>
+          <a href="#"><i class='bx bx-link-external' ></i></a>
+        </div>
+      </div>
+  
+      <div class="portfolio-box">
+        <img src="S__36028437.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>Web Design</h4>
+          <p>We use cookies and similar technologies on our website and process your personal data</p>
+          <a href="#"><i class='bx bx-link-external' ></i></a>
+        </div>
+      </div>
+  
+    </div>
+
+  
+  </section>
+
+  <!-- contact sectihjvon design -->
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+
+    <form action="#">
+      <div class="input-box">
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email Address">
+      </div>
+      <div class="input-box">
+        <input type="number" placeholder="Mobile Number">
+        <input type="email" placeholder="Email Subject">
+      </div>
+      <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+      <input type="submit" value="Send Message" class="btn">
     </form>
-
   </section>
+
+  <!-- footer design -->
+  <footer class="footer">
+    <div class="footer-text">
+      <p>Copyright &copy; 2023 by Codehal | ALL Rights Reserved.</p>
+    </div>
+
+    <div class="footer-iconTop">
+      <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+  </footer>
+  
+
+  <!-- scrooll rveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- typed js -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+
+  <script src="js/script.js"></script>
 </body>
 </html>
